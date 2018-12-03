@@ -13,6 +13,7 @@ buildscript {
         classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
         classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'
         classpath 'com.jakewharton:butterknife-gradle-plugin:8.5.1'
+        classpath 'com.jakewharton:butterknife-gradle-plugin:9.0.0-rc2'
     }
 }
 
@@ -20,6 +21,12 @@ apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 23
+
+    sourceSets {
+        main {
+            res.srcDirs = ['src/main/res']
+        }
+    }
 
     compileOptions {
         sourceCompatibility 1.8
@@ -49,5 +56,7 @@ repositories {
 dependencies {
     implementation 'com.facebook.react:react-native:+'
     implementation project(":mjpeg-view")
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 }
   
