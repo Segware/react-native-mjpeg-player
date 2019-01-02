@@ -1,6 +1,16 @@
 
-import { NativeModules } from 'react-native';
+import React, { Component } from 'react';
+import { requireNativeComponent } from 'react-native';
+import PropTypes from 'prop-types';
 
-const { RNMjpegPlayer } = NativeModules;
+const MjpegPlayer = requireNativeComponent(`MjpegPlayer`, RNMjpegplayer);
 
-export default RNMjpegPlayer;
+export default class RNMjpegplayer extends Component {
+  render() {
+    return <MjpegPlayer {...this.props} />;
+  }
+}
+
+RNMjpegplayer.propTypes = {
+  settings: PropTypes.shape({}).isRequired,
+};
