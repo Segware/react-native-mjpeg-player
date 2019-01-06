@@ -13,5 +13,8 @@
   "license": "",
   "peerDependencies": {
     "react-native": "^0.41.2"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.26.0"
   }
 }
