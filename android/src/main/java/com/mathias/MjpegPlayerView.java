@@ -30,8 +30,8 @@ public class MjpegPlayerView extends LinearLayout {
     public MjpegPlayerView(Context context) {
         super(context);
         this.context = context;
+        inflate(context, R.layout.mjpeg_player_layout, this);
         mjpegView = (MjpegSurfaceView) findViewById(R.id.mjpegViewDefault);
-        Log.e("TESTE",">>>>>>>>>>>" + mjpegView);
     }
 
 
@@ -59,17 +59,7 @@ public class MjpegPlayerView extends LinearLayout {
                         },
                         throwable -> {
                             Log.e(getClass().getSimpleName(), "mjpeg error", throwable);
-                            // WritableMap event = Arguments.createMap();
-                            // event.putString("mjpeg_error", throwable.toString());
-                            // ReactContext reactContext = (ReactContext)getContext();
-                            // reactContext.getJSModule(RCTEventEmitter.class).receiveEvent(
-                            //         getId(),
-                            //         "mjpegError",
-                            //         event
-                            // );
                         });
-
-        inflate(context, R.layout.mjpeg_player_layout, this);
     }
 
     public void stop(){
