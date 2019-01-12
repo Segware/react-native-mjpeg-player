@@ -31,6 +31,7 @@ public class MjpegPlayerView extends LinearLayout {
         super(context);
         this.context = context;
         mjpegView = (MjpegSurfaceView) findViewById(R.id.mjpegViewDefault);
+        Log.e("TESTE",">>>>>>>>>>>" + mjpegView);
     }
 
 
