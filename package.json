@@ -1,7 +1,6 @@
-
 {
   "name": "react-native-mjpeg-player",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -14,5 +13,8 @@
   "license": "",
   "peerDependencies": {
     "react-native": "^0.41.2"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.26.0"
   }
 }
