@@ -26,15 +26,15 @@ public class MjpegSurfaceView extends SurfaceView implements SurfaceHolder.Callb
 
     public MjpegSurfaceView(Context context, AttributeSet attrs) {
         super(context, attrs);
-        boolean transparentBackground = getPropertyBoolean(attrs, com.mathias.R.styleable.MjpegSurfaceView, com.mathias.R.styleable.MjpegSurfaceView_transparentBackground);
-        int backgroundColor = getPropertyColor(attrs, com.mathias.R.styleable.MjpegSurfaceView, com.mathias.R.styleable.MjpegSurfaceView_backgroundColor);
+        boolean transparentBackground = getPropertyBoolean(attrs, com.segware.R.styleable.MjpegSurfaceView, com.segware.R.styleable.MjpegSurfaceView_transparentBackground);
+        int backgroundColor = getPropertyColor(attrs, com.segware.R.styleable.MjpegSurfaceView, com.segware.R.styleable.MjpegSurfaceView_backgroundColor);
 
         if (transparentBackground) {
             setZOrderOnTop(true);
             getHolder().setFormat(PixelFormat.TRANSPARENT);
         }
 
-        switch (getPropertyType(attrs, com.mathias.R.styleable.MjpegSurfaceView, com.mathias.R.styleable.MjpegSurfaceView_type)) {
+        switch (getPropertyType(attrs, com.segware.R.styleable.MjpegSurfaceView, com.segware.R.styleable.MjpegSurfaceView_type)) {
             case DEFAULT:
                 mMjpegView = new MjpegViewDefault(this, this, transparentBackground);
                 break;

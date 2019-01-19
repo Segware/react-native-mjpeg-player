@@ -1,5 +1,5 @@
 
-package com.mathias;
+package com.segware;
 
 import android.net.Uri;
 import android.view.View;

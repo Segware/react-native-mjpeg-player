@@ -1,5 +1,5 @@
 
-package com.mathias;
+package com.segware;
 
 import java.util.Arrays;
 import java.util.Collections;
