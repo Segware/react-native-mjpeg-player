@@ -1,5 +1,7 @@
 # react-native-mjpeg-player
 
+* Support only for android
+
 ## Getting started
 
 `$ npm install react-native-mjpeg-player --save`
@@ -9,13 +11,6 @@
 `$ react-native link react-native-mjpeg-player`
 
 ### Manual installation
-
-#### iOS
-
-1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `react-native-mjpeg-player` and add `RNMjpegPlayer.xcodeproj`
-3. In XCode, in the project navigator, select your project. Add `libRNMjpegPlayer.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
-4. Run your project (`Cmd+R`)<
 
 #### Android
 
@@ -62,3 +57,11 @@ class MjpegPlayerComponent extends React.Component {
 
 export default MjpegPlayerComponent;
 ```
+
+## Props
+
+| Prop			| Description   |   Type  | Default|
+| ------------- | ------------- |-------- |--------|
+| **url** | mjpeg url stream  |  string | **required**
+| **width**  | frame width  | number | **required**
+| **height** | frame height | number | **required**
