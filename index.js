@@ -3,11 +3,11 @@ import React, { Component } from 'react';
 import { requireNativeComponent } from 'react-native';
 import PropTypes from 'prop-types';
 
-const MjpegPlayer = requireNativeComponent(`MjpegPlayer`, RNMjpegplayer);
+const MjpegPlayerView = requireNativeComponent(`MjpegPlayer`);
 
 export default class RNMjpegplayer extends Component {
   render() {
-    return <MjpegPlayer {...this.props} />;
+    return <MjpegPlayerView {...this.props} />;
   }
 }
 

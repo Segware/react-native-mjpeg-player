@@ -1,3 +1,11 @@
+//
+//  MjpegPlayerManager.swift
+//  RNMjpegPlayer
+//
+//  Created by Dev Segware on 30/03/19.
+//  Copyright © 2019 Facebook. All rights reserved.
+//
+
 import Foundation
 
 @objc(MjpegPlayerManager)
